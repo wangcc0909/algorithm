@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+        .nav-head {
+            height: 500px;
+            background: url("images/vx_bg.jpg") repeat-x top;
+            overflow: hidden;
+        }
+        .nav-head li {
+            margin-top: 20px;
+            float: left;
+        }
+        .nav-head a {
+            line-height: 33px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding-left: 15px;
+
+        }
+        .nav-head a span {
+            display: inline-block;
+            line-height: 33px;
+            padding-right: 15px;
+        }
+
+        .nav-head a:hover {
+            background: url("images/vx.png") no-repeat;
+        }
+        .nav-head a:hover span {
+            background: url("images/vx.png") no-repeat right;
+        }
+
+        .banner {
+            width: 990px;
+            height: 500px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .banner div {
+            width: 50px;
+            height: 80px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .left {
+
+        }
+        .right {
+            right: 0;
+        }
+        .banner ul {
+            width: 70px;
+            height: 13px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,.3) no-repeat;
+            border-radius: 8px;
+        }
+
+        .banner ul li {
+            width: 8px;
+            height: 8px;
+            float: left;
+            background-color: white;
+            margin: 3px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="nav-head">
+    <ul>
+        <li><a href="#"><span>首页</span></a></li>
+        <li><a href="#"><span>移动客户端</span></a></li>
+        <li><a href="#"><span>商业合作渠道</span></a></li>
+        <li><a href="#"><span>商业合作渠道</span></a></li>
+        <li><a href="#"><span>商业合作渠道</span></a></li>
+        <li><a href="#"><span>商业合作渠道</span></a></li>
+    </ul>
+</div>
+<div class="banner">
+    <img src="https://img.alicdn.com/tfs/TB1Qa_FeKP2gK0jSZFoXXauIVXa-990-500.jpg_1080x1800Q90s50.jpg" alt="">
+
+    <div class="left">
+        <a href="#"></a>
+    </div>
+
+    <div class="right">
+            <a href="#"></a>
+    </div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body {
+            /*max-width: 540px;*/
+            /*min-width: 320px;*/
+            background-color: #25badc;
+        }
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            margin: 100px 100px;
+            position: relative;
+        }
+
+        .sun::before,.sun::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            animation: move 2s linear infinite;
+        }
+        .sun::after {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.6);
+            animation: move 2s linear .3s infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(-50%,-50%) scale(1);
+                box-shadow: 0 0 5px #ccc;
+            }
+
+            50% {
+                transform: translate(-50%,-50%) scale(1.1);
+                box-shadow: 0 0 60px #ccc;
+            }
+            100% {
+                transform: translate(-50%,-50%) scale(1);
+                box-shadow: 0 0 5px #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="sun">
+
+</div>
+</body>
+</html>

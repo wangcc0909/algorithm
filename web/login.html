@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        body {
+            background-image: url(https://ossweb-img.qq.com/upload/webplat/info/yxzj/20190815/866121559075461.jpg);
+            background-position: center top;
+        }
+        .loginform {
+            width: 410px;
+            padding: 15px;
+            background-color: rgba(250,250,250,0.5);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -205px;
+        }
+
+        .loginform:after {
+        }
+
+        .loginform label {
+            display: block;
+            color: #fff;
+            margin-top: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        input {
+            font: 20px "微软雅黑";
+            padding: 5px;
+            border: 1px solid rgba(0,0,0,0.3);
+            border-radius: 3px;
+            background-color: white;
+        }
+
+        .loginform input[type=submit] {
+            background-color: blue;
+            color: white;
+            margin-top: 15px;
+        }
+        .iemail {
+            display: block;
+            width: 300px;
+        }
+        .icode {
+            width: 200px;
+            display: inline-block;
+        }
+        .get_auth {
+            color: blue;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,0.5) ;
+            border-radius: 3px;
+        }
+        .login {
+            display: inline-block;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="loginform">
+    <form action="login_submit" name="login" method="post" accept-charset="UTF-8">
+        <ul>
+            <li>
+                <label for="useremail">Email</label>
+                <input type="text" name="useremail" placeholder="youremail@email.com" class="iemail"/>
+            </li>
+            <li>
+                <label for="code">验证码</label>
+                <input type="text" name="code" placeholder="验证码" class="icode"/>
+                <span  id="get_code" class="get_auth">获取验证码</span>
+            </li>
+            <li>
+                <input type="submit" value="登录" class="login">
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>

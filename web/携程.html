@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>携程</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font: normal 16px/1.5 PingFangSC-regular, Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+        }
+
+        body {
+            color: #000;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: none;
+            -moz-user-select: none;
+            max-width: 540px;
+            margin: 0 auto;
+            background: #fafafc;
+        }
+        a {
+            text-decoration: none;
+        }
+        .banner img {
+            width: 100%;
+            height: 224px;
+        }
+        .nav {
+            padding: 8px;
+        }
+        .grid-nav {
+            display: flex;
+            background: linear-gradient(to right,#fa5956,#fb8650 54%);
+            overflow-x: hidden;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .grid-nav-item-hotel {
+            background-image: url(//pic.c-ctrip.com/platform/h5/home/grid-nav-items-hotel@v7.15.png);
+            background-repeat: no-repeat;
+            background-size: 73px auto;
+            background-position: bottom right;
+            border-top-left-radius: 8px;
+            height: 90px;
+            line-height: 90px;
+            flex: 0 1 31%;
+            color: #fff;
+            text-align: center;
+        }
+        .grid-nav-item-minsu,.grid-nav-item-jipiao {
+            height: 90px;
+            line-height: 90px;
+            color: #fff;
+            text-align: center;
+        }
+        .grid-nav-item-minsu {
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            flex: 0 1 23%;
+        }
+        .grid-nav-item-jipiao {
+            flex: 0 1 46%;
+        }
+        .grid-nav-mid {
+            background: linear-gradient(to right,#4b8fed,#53bced);
+            display: flex;
+            height: 90px;
+            line-height: 90px;
+            margin: 1px 0;
+        }
+        .grid-nav-mid a:nth-child(3) {
+            border-left: 0;
+        }
+        .grid-nav-mid a:last-child {
+            border: 0;
+        }
+        .grid-nav-footer {
+            display: flex;
+            height: 90px;
+            line-height: 90px;
+            margin: 1px 0 0 0;
+            background: linear-gradient(to right,#34c2aa,#6cd557);
+            overflow-x: hidden;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .grid-nav-footer a:nth-child(3) {
+            border-left: 0;
+        }
+        .grid-nav-footer a:last-child {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <img src="https://dimg04.c-ctrip.com/images/zg0s180000014rym6B157.jpg" alt="">
+</div>
+<div class="nav">
+    <div class="grid-nav">
+        <a href="#" class="grid-nav-item-hotel"><span>酒店</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>名宿·客栈</span></a>
+        <a href="#" class="grid-nav-item-jipiao"><span>机票·火车票+酒店</span></a>
+    </div>
+    <div class="grid-nav-mid">
+        <a href="#" class="grid-nav-item-hotel"><span>机票</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>火车票</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>汽车票·船票</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>专车·出租车</span></a>
+    </div>
+    <div class="grid-nav-footer">
+        <a href="#" class="grid-nav-item-hotel"><span>旅游</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>高铁游</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>邮轮游</span></a>
+        <a href="#" class="grid-nav-item-minsu"><span>定制游</span></a>
+    </div>
+</div>
+</body>
+</html>
